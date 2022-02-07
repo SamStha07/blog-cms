@@ -14,8 +14,6 @@ import {
 } from '../../components';
 
 const PostDetails = ({ post }) => {
-  // console.log('post details', post);
-
   const router = useRouter();
 
   if (router.isFallback) {
@@ -60,6 +58,6 @@ export async function getStaticPaths() {
 
   return {
     paths: post.map(({ node: { slug } }) => ({ params: { slug } })),
-    fallback: false,
+    fallback: true,
   };
 }
