@@ -2,7 +2,7 @@
 
 # Built with
 - Nextjs
-- Graphql
+- Graphql-request
 - GraphCMS
 - Tailwindcss
 
